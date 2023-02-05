@@ -20,8 +20,6 @@
 	border:1px solid silver;
 	border-radius:10px;
     margin-top:30px;
-	
-
 }
 .second{
 	display:flex;
@@ -31,27 +29,21 @@
 	margin-top:20px;
 }
 .date{
-
 	text-align:center;
 }
 .month{
-	
 	text-align:center;
 }
 .year{
-	
 	text-align:center;
 }
 .hour{
-	
 	text-align:center;
 }
 .minute{
-
 	text-align:center;
 }
 .seco{
-
 	text-align:center;
 }
 .third{

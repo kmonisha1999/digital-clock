@@ -1,65 +1,37 @@
-function ref(){
-function date(){
+
+function print(){
+	function date(){
 	var now=new Date();
-	var todate=now.getDate();
 	
+	var todate=now.getDate();
 	var printdate=document.getElementById("date")
 	printdate.innerText=todate;
-}
-date()
-
-function month(){
-	var now=new Date();
+	
 	var tomonth=now.getMonth();
 	var printmonth=document.getElementById("month")
 	printmonth.innerText="0"+(1+tomonth)
-}
-month()
-
-function year(){
-	var now= new Date();
+	
 	var toyear=now.getFullYear();
 	var printyear=document.getElementById("year");
 	printyear.innerText=toyear
+	
+	var tohour= now.getHours();
+	var printhour=document.getElementById("hour")
+	printhour.innerText=tohour
+	
+	var tomin= now.getMinutes();
+	var printmin=document.getElementById("min")
+	printmin.innerText=tomin
+	
+	var tosec= now.getSeconds();
+	var printsec=document.getElementById("sec")
+	printsec.innerText=tosec
 }
-year()
-}
-ref()
-
-
-function print(){
-	function hour(){
-		var now=new Date();
-		var tohour= now.getHours();
-		var printhour=document.getElementById("hour")
-		printhour.innerText=tohour
-	}
-	hour()
-
-
-	function min(){
-		var now=new Date();
-		var tomin= now.getMinutes();
-		var printmin=document.getElementById("min")
-		printmin.innerText=tomin
-	}
-	min()
-
-
-	function second(){
-		var now=new Date();
-		var tosec= now.getSeconds();
-		var printsec=document.getElementById("sec")
-		printsec.innerText=tosec
-	}
-	second()
-}
-setInterval(print,1000)
+date()
 
 function meridian(){
 	var now=new Date();
 	var am=now.getHours();
-	console.log(am)
 	var morning=document.getElementById("mor")
 	var evening=document.getElementById("eve")
 	
@@ -75,7 +47,6 @@ meridian()
 function week(){
 	var now=new Date();
 	var sun=now.getDay();
-	console.log(sun)
 	
 	if(sun==0){
 		var color=document.getElementById("sun")
@@ -108,3 +79,6 @@ function week(){
 	
 }
 week()
+}
+setInterval(print,1000)
+
